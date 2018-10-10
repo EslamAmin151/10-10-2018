@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  color: #636e72;
+}
+
+.Header h1 {
+  font-weight: 100;
+  color:red;
+}
+.header p{
+color:blue;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+    height: 40px;
+    width: 125px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 1.1em;
+    background-color:blue;
+    color: white;
+}
+
+
+#fullmenu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 100;
+  border-bottom: 2px solid #636e72;
+  padding-bottom: 15px;
+}
