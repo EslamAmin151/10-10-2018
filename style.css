@@ -1,13 +1,26 @@
 .restaurantService{
 
-display: flex;
+display: Flex;
 justify-content: space-between;
 list-style-type: none;
 width:60%;
 
+
 }
 .header{
-  display:flex;
-  justify-content: space-between;
-  background-color: red;
-}font-size:30%;
+display:flex;
+justify-content: space-between;
+background-color: red;
+font-size:80%;
+width:80%;
+justify-content: center;
+margin-left: 50px;
+
+.header h2{
+padding-left:40%;
+color:white;
+}
+
+.buttons{
+background color: red;
+}

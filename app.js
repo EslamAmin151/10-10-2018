@@ -1,25 +1,26 @@
 
 let fullDishes = document.getElementById("fullDishes")
-let starterbutton = document.getElementByClass("starterDishes")
-let entreebutton = document.getElementByClass("entreesDishes")
-let dessertbutton = document.getElementByClass("dessertDishes")
+let starterbutton = document.getElementById("starterDishes")
+let entreebutton = document.getElementById("entreesDishes")
+let dessertbutton = document.getElementById("dessertDishes")
 
 function starterDishesDisplay(dishes){
   completed = ''
-  if (course == "Starters"){
+  if (dishes.course == "Starters"){
      dishes += starterbuttton
-  } else if ( course =="Desserts"){
+  } else if ( dishes.course == "Desserts"){
     dishes += dessertButton
   } else {
     dishes += entreebutton
   }
 }
 
-for(let index = 0; index < dishes.length; index++) {
 
+for(let index = 0; index < dishes.length; index++) {
   let dishes = dishes[index]
 
-    let dishItem = `<div class="individualPlates">
+
+  let dishItem = `<div class="individualDishes">
                       <img src="${dishes.imageURL}"/>
                       <div class="description">
                         <h5>${dishes.title}</h5>
@@ -27,10 +28,13 @@ for(let index = 0; index < dishes.length; index++) {
                       </div>
                       <p class="price">${dishes.price}</p>
                     </div>`
-              dishItem += completed
+                    completed = ''
+
+                    completed += dishItem
               fullDishes.innerHTML = completed
+}
 
 
-let starterbuttton = document.createEvenetlistner("click",starterDishesDisplay)
-let entreeButton = document.createEvenetlistner("click",starterDishesDisplay)
-let dessertButton = document.createEvenetlistner("click",starterDishesDisplay)
+let starterbuttton = document.addEventListener("Click",starterDishesDisplay)
+let entreeButton = document.addEventListener("click",starterDishesDisplay)
+let dessertButton = document.addEventListener("click",starterDishesDisplay)
